@@ -1,7 +1,20 @@
 body {
-  text-align: center;
+  width: 300px;
+  margin: auto;
 }
 
 .lists {
   list-style: none;
+}
+
+li{
+  margin-bottom: 5px;
+  text-align-last: left;
+}
+
+.btn{
+  height: 25px;
+  width: 45px;
+  text-align: center;
+  margin-left: 10px;
 }
