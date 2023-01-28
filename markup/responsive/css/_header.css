@@ -1,0 +1,30 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+  background-color: inherit;
+  position: absolute;
+  z-index: 20;
+}
+
+header nav {
+  width: 45%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.hd-logo {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.ham {
+  display: none;
+}
