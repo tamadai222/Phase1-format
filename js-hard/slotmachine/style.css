@@ -4,9 +4,10 @@ body {
 p {
   display: inline-block;
   font-size: 30px;
+  margin: 0;
 }
 #setTime {
-  width: 100;
+  width: 100%;
 }
 #startTimer {
   display: block;
@@ -15,12 +16,23 @@ p {
 
 /*  チャレンジ問題 */
 
-/* .slot-wrap {
+.slot-wrap {
   height: 160px;
+  width: 300px;
+  margin: 0 auto;
 }
 
 .slot {
   height: 40px;
-} */
+}
+
+
+
+.middle-slot{
+  background-color: darksalmon;
+  width: 45%;
+  margin: auto;
+}
+
 
 /*  チャレンジ問題  ここまで */

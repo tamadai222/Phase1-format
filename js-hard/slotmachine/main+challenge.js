@@ -13,24 +13,24 @@ startTimer.addEventListener('click', () => {
   start1();
   start2();
   start3();
-
 })
 
-const slot = document.getElementsByClassName('slot')
+// const slot = document.getElementsByClassName('slot')
 
 // スタート押した時に、3つのスロットの数字表示
 function start1() {
   const nowTime1 = document.getElementById('nowTime1')
   const nowTime4 = document.getElementById('nowTime4')
   const nowTime7 = document.getElementById('nowTime7')
-
+  // 0-9が順番に表示されるようにする。9になったら0に戻る。
   nowTime1.textContent = Math.floor(Math.random() * 10)
   nowTime4.textContent = Math.floor(Math.random() * 10)
   nowTime7.textContent = Math.floor(Math.random() * 10)
-  // var stop1 にsetTimeout を入れておくことで、clearTimeoutで再度呼び出せる。
-  stop1 = setTimeout(start1, 100)
 
-};
+ }
+
+  // var stop1 にsetTimeout を入れておくことで、clearTimeoutで再度呼び出せる。
+  // stop1 = setTimeout(start1, 100)
 
 function start2() {
   const nowTime2 = document.getElementById('nowTime2')
@@ -88,3 +88,21 @@ stopBtn3.addEventListener('click', () => {
   }
 
 });
+
+const middleSlot = () => {
+  setInterval(() => {
+    let count1 = 0
+    if (count1 === 0) {
+      count1 = 0
+      nowTime1.textContent = count1
+      count1 += 1
+    } else if (count1 === 9) {
+      count1 = 0
+      nowTime1.textContent = count1
+    } else {
+      nowTime1.textContent = count1
+      count1 += 1
+    }
+  }, 100)
+  console.log(count1)
+}
