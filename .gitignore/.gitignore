@@ -1,0 +1,2 @@
+#Phase1-format > .gitignore　　Phase1-formatの中の全てのディレクトリで.historyファイルをignoreする。
+/.history
