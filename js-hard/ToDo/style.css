@@ -3,5 +3,18 @@ body {
 }
 
 .lists {
-  list-style: none;
+  list-style-type: none;
+}
+
+.todo-app{
+  width: 200px;
+  margin: 0 auto ;
+}
+
+li{
+  margin-bottom:10px;
+}
+
+.trash{
+  margin-left: 10px;
 }
