@@ -1,0 +1,64 @@
+arr.length -1　にする意味は？？
+arr.lengthだけだと、数字が9個生成されてしまう。。。
+arr[]8個の数字を作った後に、7回シャッフルを実行して数字を並べ替える。
+
+--------------------------------------------
+// [arr[i]] = [arr[j]]だけでは、1〜4の数字が2つずつ生成されなくなる。
+arr[1,2,3,4,1,2,3,4]
+
+i=0, j=7
+[arr[i], arr[j]] = [arr[j], arr[i]]
+[arr[0]:1, arr[7]:4] = [arr[7]:4, arr[0]:1]
+[1, 4] = [4, 1]
+
+代入後(シャッフルされる) => arr[0]:4, arr[7]:1
+==> arr[4,....,1]
+
+--------------------------------------------
+
+
+className,addClassListの違い
+classNameはもともとクラスがついている要素の名前を変える。
+--------------------------------------------
+
+div.innerHTML = div.number
+＝＞div.innerHTML = ""　= '.card back'の時
+    div.number arr[...]
+
+ if (div.innerHTML === '') { //初期値の時。clickで数字を表示
+    div.className = 'card'
+    div.innerHTML = div.number // => arr[i]
+  } else {　
+    return;
+  }
+
+#else{
+  return
+}はなぜいるのか。
+
+--------------------------------------------
+let divの方。
+cardFirstは<div>カードを入れる変数
+
+--------------------------------------------
+panel.classList.add('eventNone')
+
+--------------------------------------------
+cardFirst = null;　
+=>（値がnullの変数は、「値が存在しない」）
+{cardFirst = null;
+  backsetTimer = NaN;
+  はなくても動く。。。}
+
+backsetTimer = NaN;
+--------------------------------------------
+div, cardFirstの違い
+--------------------------------------------
+flgFirst = true;の意義
+
+スコープ
+
+console.dir()
+
+div.number はnumberはオブジェクト。プロパティーではない。
+div.indexも意味はあまりない。勝手に作り出したもの。
